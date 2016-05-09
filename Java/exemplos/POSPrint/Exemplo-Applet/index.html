@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Exemplo Applet para Impressora Termica</title>
+    </head>
+    <body>
+        <applet id="impressora1" name="impressora" code="ImpressoraTermicaApplet.class" archive="impressora.jar" width="300" height="300">
+            NO APPLET
+        </applet>
+        <br>
+        <input type="text" name="valor" id="valor" /><br>
+        <button type="button" onclick="imp()">Imprimir!</button><br>
+        <button type="button" onclick="cortarParcial()">Cortar Parcial!</button><br>
+        <button type="button" onclick="cortarTotal()">Cortar Total!</button><br>
+
+        <script type="text/javascript">
+            function imp() {
+                //window.alert(document.getElementById("valor").value);
+                document.getElementById("impressora1").imprimir(document.getElementById("valor").value);
+            }
+            function cortarParcial() {
+                document.getElementById("impressora1").cortarParcial();
+            }
+            function cortarTotal() {
+                document.getElementById("impressora1").cortarTotal();
+            }
+        </script>
+    </body>
+</html>

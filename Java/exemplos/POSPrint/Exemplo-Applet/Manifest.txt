@@ -1,0 +1,12 @@
+Main-Class: ImpressoraTermica
+Name: impressora
+Specification-Title: Classe simples de manipulacao de impressora
+Specification-Version: 1.0
+Specification-Vendor: Exemplo Ltda
+Implementation-Title: impressora
+Implementation-Version: 1
+Implementation-Vendor: Exemplo Ltda
+Permissions: all-permissions
+Codebase: *
+Application-Name: Exemplo Impressora Termica
+Caller-Allowable-Codebase: localhost 127.0.0.1

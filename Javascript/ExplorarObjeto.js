@@ -1,11 +1,7 @@
-/*
- * DISPONÍVEL EM: https://github.com/guilhermedelemos/equanimous-octo-rutabaga
- */
-
 /**
  * Recupera dados de um objeto.
- * @param {type} objeto Um objeto qualquer que se queira varrer.
- * @param {type} profundidade Indica se a busca se extenderá a objetos agregados. Valores aceitos: [0..n].
+ * @param {object} objeto Um objeto qualquer que se queira varrer.
+ * @param {integer} profundidade Indica se a busca se extenderá a objetos agregados. Valores aceitos: [0..n].
  * @returns {String} Retorna uma string com as propriedades do objeto e seus respectivos valores.
  */
 function recuperarDadosObjeto(objeto, profundidade) {

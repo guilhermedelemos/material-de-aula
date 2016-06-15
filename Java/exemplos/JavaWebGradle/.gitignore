@@ -1,0 +1,11 @@
+.gradle/
+.idea/
+build/
+out/
+webapps/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.rar

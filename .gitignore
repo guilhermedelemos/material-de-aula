@@ -1,4 +1,6 @@
 # Java
 *.class
 *.jar
-
+# Lazarus
+*.bak
+*.exe

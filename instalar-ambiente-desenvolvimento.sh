@@ -31,6 +31,11 @@ instalar_postgresql() {
 
     # NA ORDEM: Servidor, modulos adicionais, bibliotecas e binarios cliente, desenvolvimento frontend, desenvolvimento backend, ferramenta administrativa 
     apt-get install -y postgresql-9.5 postgresql-contrib-9.5 postgresql-client-9.5 libpq-dev postgresql-server-dev-9.5 pgadmin3
+
+    # ALTERACAO DA SENHA PADRAO
+    su postgres
+    psql -c "ALTER USER postgres WITH ENCRYPTED PASSWORD 'postgres';"
+    exit
 }
 
 instalar_php() {
@@ -61,7 +66,6 @@ instalar_java() {
     apt-get install -y oracle-java8-installer
 }
 
-
 instalar_ruby() {
     apt-get install -y curl gnupg libmagickcore-dev libmagickwand-dev
     apt-get install -y ruby ruby-dev rubygems libruby ruby-full libapache2-mod-passenger
@@ -78,13 +82,21 @@ escritorio() {
     apt-get install -y gnucash
 }
 
+instalar_lazarus_ide() {
+    # BAIXE E INSTALE DO SITE OFICIAL DE ACORDO COM SEU SO
+    # http://lazarus-ide.org
+}
+
 iniciar_instalacao() {
     exibir_avisos_inicializacao
     atualizar_so
     instalar_essenciais
-    instalar_ambiente_desenvolvimento_php
-    instalar_ambiente_desenvolvimento_java
-    instalar_ambiente_desenvolvimento_ruby
+    instalar_java
+    instalar_mysql
+    instalar_postgresql
+    instalar_php
+    instalar_ruby
+    escritorio
     exibir_avisos_encerramento
 }
 
@@ -109,4 +121,3 @@ exibir_avisos_encerramento() {
 }
 
 iniciar_instalacao
-exibir_avisos

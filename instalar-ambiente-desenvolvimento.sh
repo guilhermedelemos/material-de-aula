@@ -23,8 +23,8 @@ instalar_mysql() {
 }
 
 instalar_postgresql() {
-    # REPOSITORIO OFICIAL DO POSTGRESQL
-    # MAIS INFORMACOES EM: https://www.postgresql.org/download/linux/debian/
+    # REPOSITÓRIO OFICIAL DO POSTGRESQL
+    # MAIS INFORMAÇÕES EM: https://www.postgresql.org/download/linux/debian/
     echo "deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main" | tee /etc/apt/sources.list.d/pgdg.list
     wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
     apt-get update
@@ -83,8 +83,9 @@ escritorio() {
 }
 
 instalar_lazarus_ide() {
-    # BAIXE E INSTALE DO SITE OFICIAL DE ACORDO COM SEU SO
+    # BAIXE E INSTALE DO SITE OFICIAL DE ACORDO COM SEU SISTEMA OPERACIONAL
     # http://lazarus-ide.org
+    apt-get install -y gdb
 }
 
 iniciar_instalacao() {
@@ -103,7 +104,6 @@ iniciar_instalacao() {
 exibir_avisos_inicializacao() {
     echo "ATENCAO, ESTE SCRIPT E COMPATIVEL APENAS COM DISTRIBUICOES DEBIAN E DERIVADOS."
     echo "TESTADO COM DEBIAN 8.4.0 DE 02/04/2016"
-    echo " "
 }
 
 exibir_avisos_encerramento() {
@@ -118,6 +118,8 @@ exibir_avisos_encerramento() {
     echo "4. Configure o Munin e o Munin-Node"
     echo "https://www.linode.com/docs/uptime/monitoring/monitoring-servers-with-munin-on-debian-6-squeeze"
     echo "https://www.digitalocean.com/community/tutorials/how-to-install-the-munin-monitoring-tool-on-debian-8"
+    echo "5. Crie uma chave SSH"
+    echo "ssh-keygen -t rsa -b 4096 -C \"your_email@example.com\""
 }
 
 iniciar_instalacao

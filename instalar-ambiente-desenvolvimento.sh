@@ -18,7 +18,7 @@ instalar_essenciais() {
 instalar_mysql() {
     echo "ATENÇÃO: MYSQL NÃO TEM RECEBIDO ATUALIZÇÕES EVOLUTIVAS A ALGUNS ANOS."
     echo "CONSIDERE UTILIZAR O MARIADB OU O POSTGRESQL PARA NOVOS PROJETOS!"
-    apt-get install -y mysql_server
+    apt-get install -y mysql-server
     mysql_secure_installation
 }
 

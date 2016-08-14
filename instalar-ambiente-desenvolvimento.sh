@@ -86,6 +86,16 @@ instalar_lazarus_ide() {
     # BAIXE E INSTALE DO SITE OFICIAL DE ACORDO COM SEU SISTEMA OPERACIONAL
     # http://lazarus-ide.org
     apt-get install -y gdb
+    apt-get install -y libxmlsec1-dev libltdl-dev
+
+    # ATENÇÃO, PARA QUEM USA O ACBR É NECESSÁRIO INSTALAR MANUALMENTE A BIBLIOTECA XML SEC
+    # BAIXE: https://www.aleksey.com/xmlsec/download.html
+    # INSTALE COM ./configure | make | make install
+    # APÓS A INSTALAÇÃO FAÇA OS LINKS SIMBÓLICOS ABAIXO:
+    # ln -s  /usr/local/lib/libxmlsec1.so.1.2.22  /usr/local/lib/libxmlsec1.so.1
+    # ln -s  /usr/local/lib/libxmlsec1.so.1.2.22  /usr/local/lib/libxmlsec.so
+    # ln -s  /usr/local/lib/libxmlsec1.so.1.2.22  /usr/bin/libxmlsec.so
+    # ln -s  /usr/local/lib/libxmlsec1.so.1.2.22  /usr/lib/libxmlsec.so 
 }
 
 iniciar_instalacao() {

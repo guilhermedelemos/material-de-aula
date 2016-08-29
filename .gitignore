@@ -6,3 +6,5 @@
 *.exe
 # Backup kdiff3
 *.orig
+# Outros
+*.zip

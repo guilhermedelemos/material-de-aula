@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/07/18 12:45:01.000.810,=C:\Users\Guilherme\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/08/24 17:15:41.000.891,=C:\Users\Guilherme\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/08/24 17:16:05.000.473,=C:\Users\Guilherme\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/08/24 17:16:27.000.508,=C:\Users\Guilherme\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/09/14 09:12:29.000.207,=C:\Users\Guilherme\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/11/01 12:23:43.000.366,=C:\Users\Guilherme\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/11/01 12:25:05.000.705,D:\LondonSistemas\Projetos\ExemploVCL-Estilos\Unit1.dfm=C:\Users\Guilherme\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2016/11/01 12:25:05.000.705,D:\LondonSistemas\Projetos\ExemploVCL-Estilos\Unit1.pas=C:\Users\Guilherme\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/11/01 12:25:06.000.934,D:\LondonSistemas\Projetos\ExemploVCL-Estilos\Project1.dproj=C:\Users\Guilherme\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/11/01 14:30:07.000.536,=D:\LondonSistemas\Projetos\ExemploVCL-Estilos\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>
